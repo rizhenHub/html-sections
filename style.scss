@@ -95,3 +95,36 @@ main.container{
 }
 
 /* end of section marque - infinite horizontal Scroll effect*/
+
+section.desktop-banner {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+        
+    img {
+        flex:1;
+        max-width: 1175px;
+        width: 100%;
+    }
+}
+section.mobile-banner {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+        
+    img {
+        flex:1;
+        max-width: 750px;
+        width: 100%;
+    }
+    display:none;
+}
+
+@media (max-width: 750px) {
+    section.mobile-banner {
+        display:block; 
+    }
+    section.desktop-banner {
+        display:none;
+    }
+}

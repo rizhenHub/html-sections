@@ -136,4 +136,53 @@ main.container {
 }
 
 /* end of section marque - infinite horizontal Scroll effect*/
+section.desktop-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.desktop-banner img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 1175px;
+  width: 100%;
+}
+
+section.mobile-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+section.mobile-banner img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 750px;
+  width: 100%;
+}
+
+@media (max-width: 750px) {
+  section.mobile-banner {
+    display: block;
+  }
+  section.desktop-banner {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
